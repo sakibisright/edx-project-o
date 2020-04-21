@@ -1,8 +1,55 @@
 <html>
     <head>
         <title>hello world</title>
+        <style>
+            body {
+                background-color: beige;
+            }
+            header{
+                font-family: sans-serif; 
+                font-size: 32px;
+                text-align: center;
+                background-color: aquamarine;
+                    
+            }
+            #form {
+                text-align: center;
+                background-color: aquamarine
+            }
+        
+        </style>
     </head>
     <body>
-        this is test file
+        <header>Form Design</header>
+    <div id="form"><form>
+        <div id="login">
+           <label>name</label> <input name="name" type="text" placeholder="user name">
+          <label>Passward</label>  <input passward="passward" type="password" placeholder="passward"> 
+        </div>
+        <div id="option">
+           <label >Faboraite color</label><br>
+            <input name="color" type="radio" value="red">
+            <label class="1">Red</label><br>
+            <input name="color" type="radio" value="Green">
+            <label class="2">Green</label><br>
+            <input name="color" type="radio" value="red">
+                <label class="1">Blue</label><br>
+            <input name="color" type="radio" value="Blue">
+            <label class="1">Black</label>
+        </div>
+        <div id="datalist">
+            <label>Select your Country</label>
+            <input list="country">
+            <datalist id="country">
+                <option>America</option>
+                <option>Argentina</option>
+                <option>Bangladesh</option>
+                <option>Bhutan</option>
+                <option>Canada</option>
+                <option>India</option>
+                <option>Pakistan</option>
+            </datalist>
+        </div>
+        </form></div>
     </body>
 </html>
